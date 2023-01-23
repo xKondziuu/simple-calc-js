@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="calc">
+      <div class="input">
+        <input type="number" name="digit1" id="int1">
+        <input type="number" name="digit2" id="int2">
+      </div>
+      <div class="action">
+        <input type="button" value="+" id="add">
+        <input type="button" value="-" id="subtract">
+        <input type="button" value="*" id="multiply">
+        <input type="button" value="/" id="divide">
+      </div>
+      <div class="output">
+        <span>Wynik:</span><span id="result"></span>
+      </div>
+    </div>
+    <style type="text/css">
+      .input, .action {
+        display: flex;
+        flex-direction: row;
+      }
+      input[type="number"] {
+        max-width: 80px;
+      }
+      input[type="button"] {
+        min-width: 25px;
+        font-weight: bold;
+      }
+      .action, .output {
+        margin-top: 5px;
+      }
+    </style>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
